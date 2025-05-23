@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UC COMMUNICATION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .hero-section {
+  background: url('img/img2.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+    padding: 60px 15px;
+    text-align: center;
+    background-attachment: scroll; /* disables parallax on mobile */
+  }
+}
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .timeline {
+      list-style: none;
+      padding-left: 0;
+      border-left: 3px solid #0d6efd;
+    }
+    .timeline li {
+      margin-bottom: 20px;
+      padding-left: 15px;
+      position: relative;
+    }
+    .timeline li::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background-color: #0d6efd;
+      position: absolute;
+      left: -8px;
+      top: 4px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top" data-aos="fade-down">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#"><img src="img/My Brand.png" alt="" height="30vh" width="30vw"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Web Development</a></li>
+            <li><a class="dropdown-item" href="#">Gadget Sales</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section with Image Left -->
+<section class="py-5 text-center hero-section position-relative" data-aos="fade-up">
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="row align-items-center">
+      <!-- Image First (Left) -->
+      <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-left">
+        <img src="img/Img1.jpg" alt="Hero Image" height="500px" style="width: 100%; object-fit: cover; border-radius: 12px;">
+      </div>
+
+      <!-- Text Second (Right) -->
+      <div class="col-md-6 text-white text-md-start text-center" data-aos="fade-right">
+        <h1 class="display-4 fw-bold">Hi, I'm Ozioko Uchenna</h1>
+        <p class="lead">Front-End Developer, Graphic Designer, Finacle Intern</p>
+        <a href="#portfolio" class="btn btn-light btn-lg mt-3">View My Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light" data-aos="fade-up">
+  <div class="containe"></div>
+</section>
+
+<section id="skills" class="py-5 bg-light" data-aos="zoom-in">
+  <div class="container">
+    <h2 class="section-title text-center">Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <h5>Front End Developer</h5>
+        <div class="progress mb-3"><div class="progress-bar bg-primary" style="width: 90%">90%</div></div>
+      </div>
+      <div class="col-md-3">
+        <h5>Graphic Designer</h5>
+        <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 85%">85%</div></div>
+      </div>
+      <div class="col-md-3">
+        <h5>React/Node.js</h5>
+        <div class="progress mb-3"><div class="progress-bar bg-warning" style="width: 80%">80%</div></div>
+      </div>
+      <div class="col-md-3">
+        <h5>Bootstrap/Tailwind</h5>
+        <div class="progress mb-3"><div class="progress-bar bg-info" style="width: 75%">75%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title text-center">What People Say</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p>"Uchenna developed a fantastic site for my business – fast, responsive, and beautiful!"</p>
+          <footer class="blockquote-footer">Ominik</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p>"His knowledge as a Graphic Designer and problem-solving is top-notch."</p>
+          <footer class="blockquote-footer">Zammani Liquor, Colleague</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" data-aos="fade-up">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card shadow-sm h-100">
+          <img src="img/uc website.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">UC COMMUNICATION</h5>
+            <p class="card-text">Building the future, one algorithm at a time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-up">
+        <div class="card shadow-sm h-100">
+          <img src="img/UC Gadget Flyer.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">UC GADGETS</h5>
+            <p class="card-text">UC Communications offers the widest range of gadgets to keep you connected and ahead of the curve.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-right">
+        <div class="card shadow-sm h-100">
+          <img src="img/uc design flyer.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">GRAPHIC DESIGNER</h5>
+            <p class="card-text">Professional flyer and logo design services tailored to your business needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Me Section -->
+<section class="py-5 bg-white" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Why Choose Me</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="p-4 shadow-sm rounded bg-light h-100">
+          <i class="bi bi-code-slash display-5 text-primary mb-3"></i>
+          <h5>Clean Code</h5>
+          <p>I write well-structured, maintainable, and optimized code for seamless performance.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 shadow-sm rounded bg-light h-100">
+          <i class="bi bi-laptop display-5 text-success mb-3"></i>
+          <h5>Responsive Design</h5>
+          <p>Your website will look great on all devices — from desktops to mobile phones.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 shadow-sm rounded bg-light h-100">
+          <i class="bi bi-lightning-charge display-5 text-warning mb-3"></i>
+          <h5>Fast Delivery</h5>
+          <p>Timely delivery without compromising quality — every time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer CTA -->
+<section id="contact" class="py-5 text-white text-center" style="background-color: #0d6efd;" data-aos="zoom-in-up">
+  <div class="container">
+    <h2>Let's Build Something Great Together!</h2>
+    <p class="lead mb-4">Contact me today to bring your vision to life.</p>
+    <div class="mb-4">
+      <p class="mb-2">
+        <strong>Email:</strong> 
+        <a href="mailto:uchennaozioko1999@gmail.com" class="text-white text-decoration-underline">uchennaozioko1999@gmail.com</a>
+      </p>
+      <p>
+        <strong>WhatsApp:</strong> 
+        <a href="https://wa.me/2347039806732" target="_blank" rel="noopener" class="text-white text-decoration-underline">
+          +234 7039806732
+        </a>
+      </p>
+    </div>
+    <a href="#contact" class="btn btn-light btn-lg">Get In Touch</a>
+  </div>
+</section>
+
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
